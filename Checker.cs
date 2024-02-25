@@ -7,8 +7,14 @@ namespace ArtLibrary.Sql
 {
     public class Checker
     {
-        private string checkedConnectionString;
-        public string CheckedConnectionString => checkedConnectionString;
+        private string connectionString;
+        public string ConnectionString => connectionString;
+
+        private bool checkedConnection = false;
+        public bool CheckedConnection => checkedConnection;
+
+        private bool checkedPath = false;
+        public bool CheckedPath => checkedPath;
 
         public void CheckConnection(string connectionString)
         {
@@ -19,7 +25,9 @@ namespace ArtLibrary.Sql
                     connection.Open();
                     if (connection.State == ConnectionState.Open)
                     {
-                        checkedConnectionString = connectionString;
+                        this.connectionString = connectionString;
+                        checkedConnection = true;
+
                         MessageBox.Show("Подключение к базе данных успешно установлено");
                     }
                     else
@@ -41,6 +49,8 @@ namespace ArtLibrary.Sql
             { 
                 MessageBox.Show("Папки не существует. Проверьте корректность пути"); 
             }
+            else checkedConnection = true;
+
         }
     }
 }
