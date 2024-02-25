@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34525.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArtLibrary.Sql", "ArtLibrary.Sql.csproj", "{22248EA9-981F-4ECE-B06B-F3437FC8B67C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{22248EA9-981F-4ECE-B06B-F3437FC8B67C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22248EA9-981F-4ECE-B06B-F3437FC8B67C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22248EA9-981F-4ECE-B06B-F3437FC8B67C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22248EA9-981F-4ECE-B06B-F3437FC8B67C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {54A56D6C-F192-4260-9516-BDBC5C884412}
+	EndGlobalSection
+EndGlobal
