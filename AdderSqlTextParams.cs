@@ -20,5 +20,21 @@ namespace ArtLibrary.Sql
         {
             cmd.Parameters.AddWithValue(columnName, control.Text);
         }
+
+        public void Add(SqlCommand cmd, string columnName, List<string> value)
+        {
+            foreach(var element in value)
+            {
+                cmd.Parameters.AddWithValue(columnName, element);
+            }
+        }
+
+        public void Add(SqlCommand cmd, List<string> columnNames, List<string> values)
+        {
+            foreach (var element in columnNames.Zip(values, Tuple.Create))
+            {
+                cmd.Parameters.AddWithValue(element.Item1, element.Item2);
+            }
+        }
     }
 }

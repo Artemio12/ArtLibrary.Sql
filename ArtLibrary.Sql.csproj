@@ -7,7 +7,7 @@
     <ProjectGuid>{22248EA9-981F-4ECE-B06B-F3437FC8B67C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>ArtLibrary.SqlParams</RootNamespace>
-    <AssemblyName>ArtLibrary.SqlParams</AssemblyName>
+    <AssemblyName>ArtLibrary.Sql</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -45,7 +45,9 @@
     <Compile Include="AdderSqlImageParams.cs" />
     <Compile Include="AdderSqlTextParams.cs" />
     <Compile Include="Checker.cs" />
+    <Compile Include="DataGridDeleter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewerInDataGrid.cs" />
     <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
